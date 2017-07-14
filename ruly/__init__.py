@@ -1,1 +1,1 @@
-from ruly import rule
+from .ruly import rule
