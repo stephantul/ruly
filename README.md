@@ -29,6 +29,6 @@ from ruly import rule
 result = rule(150, 75, [75], 30)
 
 from matplotlib import pyplot as plt
-plt.imshow(p)
+plt.imshow(result)
 plt.show()
 ```
