@@ -1,0 +1,1 @@
+from ruly import rule

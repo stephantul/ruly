@@ -15,8 +15,6 @@ For example, the binary representation of the number 30 in 8 bits is
 
 The binary automaton evolves by converting the current vector into trigrams,
 and converting each of these trigrams into a 3-bit integer representation.
-This integer representation then specifies the state of the middle number
-in the following time-step.
 
 For example, given the rule '01111000' above, the trigram '000' would produce
 a '0' in the position below the middle position of the trigram, while
