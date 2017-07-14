@@ -3,10 +3,11 @@ import numpy as np
 
 def rule(width, num_steps, start_indices, num):
     """
-    Apply a rule width // 2 times.
+    Apply a rule for a number of iterations times.
 
     :param width: The width of the canvas.
-    :param start_indices: The indices which start at 1.
+    :param num_steps: The number of iterations.
+    :param start_indices: The indices of the starting vector which start as 1.
     :param num: The number of the rule.
     """
     vec = np.zeros(width, dtype=np.int32)
@@ -28,7 +29,8 @@ def step(vec, rules):
     Perform a single step.
 
     :param vec: The input vector.
-    :param labels: An array of transfer rules.
+    :param rules: An array of transfer rules.
+    :return: A transformed vector.
     """
     # Start with an array of zeros
     n_vec = np.zeros_like(vec, dtype=np.int)
